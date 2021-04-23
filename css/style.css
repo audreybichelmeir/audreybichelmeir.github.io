@@ -43,7 +43,7 @@ body {
 }
 
 .menu-items li a:hover {
-  background-color: #ccc7d3;
+  color: #c05d0c; /*hover in full */
 }
 
 /* nav menu button */
@@ -172,7 +172,7 @@ body {
     left: 0;
     height: 100vh;
     transform: translateX(100vw);
-    background-color: #5a4d70;
+    background-color: #e6c487;
 
   }
   .menu-items.open {
@@ -183,7 +183,7 @@ body {
     height: 100%;
   }
   .menu-items li a {
-    color: #ffffff;
+    color: #ffffff; /*list of items before selecting*/
     font-size: 5vh;
     display: flex;
     justify-content: center;
@@ -192,7 +192,7 @@ body {
     height: 100%;
   }
   .menu-items li a:hover {
-    color: #111111;
+    color: #c2775a; /*list of items after selecting*/
   }
 }
 
