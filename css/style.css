@@ -1,5 +1,5 @@
 /* globals */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: Monterrat, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* header */
@@ -153,7 +153,7 @@ body {
 }
 
 /* media query for mobile devices */
-@media (max-width: 767px) {
+@media (max-width: 700px) {
   .custom-shape-divider svg {
     width: calc(250% + 1.3px);
     height: 150px;
