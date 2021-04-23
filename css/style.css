@@ -120,6 +120,7 @@ img{
 
 }
  .intro-section img {
+   transform: scaleX(-1);
   display: block;
   max-width: 100%;
   border-radius: 10%;
