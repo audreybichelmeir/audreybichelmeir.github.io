@@ -127,7 +127,7 @@ body {
   overflow: hidden;
 }
 
-.custom-shape-divider svg {
+.custom-shape-divider img {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
@@ -140,7 +140,7 @@ body {
 
 /* media query for tablet devices */
 @media (max-width: 1023px) {
-  .custom-shape-divider svg {
+  .custom-shape-divider img {
     width: calc(200% + 1.3px);
     height: 150px;
   }
@@ -153,8 +153,8 @@ body {
 }
 
 /* media query for mobile devices */
-@media (max-width: 700px) {
-  .custom-shape-divider svg {
+@media (max-width: 767px) {
+  .custom-shape-divider img {
     width: calc(250% + 1.3px);
     height: 150px;
   }
