@@ -10,7 +10,7 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-
+/* ====================INTRODUCTION ========================*/
 /* header */
 .header {
   position: fixed;
@@ -63,6 +63,8 @@ body {
   width: 1.5rem;
   height: 0.1rem;
   background-color: #111111;
+  transition: all 0.5s ease-in-out; /*animation of hamburger*/
+
 
 }
 .menu-btn__lines::before,
@@ -111,11 +113,19 @@ body {
 .intro-col {
   padding: clamp(1rem, 8vw, 5rem);
   max-width: 50%;
+  /*this the hi ...*/
 }
+img{
+  margin-left:60px;
 
-
-.intro-section img {
-  width: clamp(250px, 30vw, 500px);
+}
+ .intro-section img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10%;
+  border:solid;
+  border-color:#c2775a;
+  width: clamp(200px, 40vw, 200px);
 }
 
 /* custom shape for intro section */
@@ -239,3 +249,77 @@ body {
   .social-list_link {
     padding: .5em;
   }
+
+  /* ====================ABOUT ========================*/
+
+.about-me-header{
+  padding:40px;
+  text-align:center;
+}
+
+.about-me__body{
+  padding-top:10px;
+  padding-left:20px;
+}
+
+.about-me__img{
+  border-radius: 10%;
+  border:solid;
+  border-color:#c05d0c;
+
+}
+  .section__subtitle--about {
+    padding: .25em 1em;
+    margin-bottom: 1em;
+
+
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+
+
+}
+
+.about-me__img {
+    box-shadow: var(--bs);
+
+
+}
+
+@media (min-width: 600px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas:
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+
+    }
+
+    .section__title--about {
+        grid-area: title;
+
+    }
+
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: 1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+          padding-left: 1em;
+        padding-right: calc(200px + 4em);
+    }
+
+    .about-me__img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+
+
+
+    }
+}
