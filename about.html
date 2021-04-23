@@ -6,72 +6,73 @@
         <title>Audrey Bichelmeir's Personal Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-
+        <script src="index.js" defer></script>
         <!-- fonts -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-
-        <link rel="stylesheet" href="css/style.css">
-
     </head>
     <body>
       <main>
+        <!-- *****************  HEADER/ NAV  ***************** -->
 
-        <header>
-             <nav class="navbar">
-                 <div class ="nav-left">
+        <header class="header">
+        <a href="index.html" style="text-decoration:none">Audrey Bichelmeir</a>
+        <div class="menu-btn">
+          <div class="menu-btn__lines"></div>
+        </div>
+        <ul class="menu-items">
+          <li><a href="work.html" class="menu-item">Work</a></li>
+          <li><a href="about.html" class="menu-item">About</a></li>
+          <li><a href="AudreyBichelmeirResume.pdf" class="menu-item">Resume</a></li>
+        </ul>
+      </header>
+    <!-- *****************  INTRO  ***************** -->
 
-                     <a href="index.html" style="text-decoration:none" >Audrey Bichelmeir</a>
-                 </div>
+    <section class="section intro-section">
+      <div class="intro-col">
+        <!-- different class later to adjsut the image -->
+        <p class="section_title section_title-about">
+        I am currently a student at Chapman University pursuing my Bachelor’s in Computer Science with a minor in Game development.
+        <br>
+        Right now, I am currently on a gap semester, and I am utilizing this time to explore my interest in front-end development through personal projects and MOOCs.
+        At the moment I am creating my own personal website and learning the React framework.
+        <br>
+        I’m looking for internship, co-op, mentorship, appeniceship for summer 2021. I’m hoping to find a team of engineers to work within a fast-paced, progressive environment that allows me to be continually challenged as a software engineer while learning from professionals. I would like to show my passion and further my skills.
+        <br>
+        here I would like to share some people who inspire me
+        </p>
+      </div>
+      <div class="intro-col intro-img">
+        <img src="img/audrey-working.jpg" alt="picture of audrey in a classroom" />
+      </div>
+    </section>
 
-                 <div class="navlinks">
-                     <a href="work.html">work</a>
-                     <a href="about.html"> about</a>
-                     <a href="AudreyBichelmeirResume.pdf">resume</a>
-                 </div>
-             </nav>
-         </header>
+          <!-- *****************  Footer  ***************** -->
+      <footer class="footer">
 
-                <section class="about">
-                    <img src="img/audrey-working.jpg" alt="" class="work_img">
-                    <p class="section_title section_title-about">
-                      I am currently a student at Chapman University pursuing my Bachelor’s in Computer Science with a minor in Game development.
-                      <br>
-                      Right now, I am currently on a gap semester, and I am utilizing this time to explore my interest in front-end development through personal projects and MOOCs.
-                      At the moment I am creating my own personal website and learning the React framework.
-                      <br>
-                      I’m looking for internship, co-op, mentorship, appeniceship for summer 2021. I’m hoping to find a team of engineers to work within a fast-paced, progressive environment that allows me to be continually challenged as a software engineer while learning from professionals. I would like to show my passion and further my skills.
-                      <br>
-                      here I would like to share some people who inspire me
-                      </p>
+        <a href="mailto:bichelmeir@chapman.edu" class="footer-link">bichelmeir@chapman.edu</a>
+          <ul class="social-list">
+            <li class="social-list_item">
+              <a href="AudreyBichelmeirResume.pdf" target="_blank" class="social-list_link">
+                <i class="far fa-file-alt"></i>
+              </a>
+            </li>
 
-                </section>
+            <li class="social-list_item">
+              <a href="https://github.com/audreybichelmeir" target="_blank" class="social-list_link" >
+                <i class="fab fa-github-square"></i>
+              </a>
+            </li>
+            <li class="social-list_item">
+              <a href="https://www.linkedin.com/in/audrey-bichelmeir" target="_blank" class=" social-list_link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
 
-                <!-- *****************  Footer  ***************** -->
-                <footer class="footer">
-                  <a href="mailto:bichelmeir@chapman.edu" class="footer-link">bichelmeir@chapman.edu</a>
-                    <ul class="social-list">
-                      <li class="social-list_item">
-                        <a href="AudreyBichelmeirResume.pdf" target="_blank" class="social-list_link">
-                          <i class="far fa-file-alt"></i>
-                        </a>
-                      </li>
-
-                      <li class="social-list_item">
-                        <a href="https://github.com/audreybichelmeir" target="_blank" class="social-list_link" >
-                          <i class="fab fa-github-square"></i>
-                        </a>
-                      </li>
-                      <li class="social-list_item">
-                        <a href="https://www.linkedin.com/in/audrey-bichelmeir" target="_blank" class=" social-list_link">
-                          <i class="fab fa-linkedin"></i>
-                        </a>
-                      </li>
-                    </ul>
-                </div>
-              </footer>
+      </footer>
       </main>
     </body>
 </html>

@@ -90,6 +90,10 @@ body {
   background-color: #ffffff;
 }
 
+.section h1 {
+  padding:40px;
+}
+
 /* sections */
 .section {
   position: relative;
