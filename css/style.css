@@ -1,0 +1,156 @@
+/*========= navigation =================*/
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    align-items: center;
+}
+
+.navlinks {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.nav-left {
+    color: black;
+    margin-left: 30px;
+  }
+
+.nav-left a:visted {
+   color: black;
+}
+
+.navlinks a {
+    font-size: 15px;
+    padding: 5px 18px;
+    padding-right: 5px;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+
+  }
+
+.navbar a:hover {
+    color: #c05d0c;
+  }
+.navbar a.active {
+    color: #c05d0c;
+}
+
+.navbar .active:after {
+    content: ".";
+  }
+  /*========= responsive? =================*/
+
+  /*========= introduction =================*/
+  /**image**/
+.intro_img {
+  max-width: 15%;
+  margin: 0 auto;
+
+  border-radius: 10%;
+  border-color: coral;
+  border-width: .2em;
+  border-style: solid;
+
+  position: absolute;
+  left: 250px;
+  top: 200px;
+  z-index: -1;
+}
+/***blurp**/
+.section_title-intro {
+    font-weight: normal;
+    font-size: 50px;
+    padding-top: 5px;
+    line-height: 1.6;
+    grid-area: subtitle;
+    font-size: 80px;
+    margin-left:40%;
+    font-size:8vw;
+}
+
+/*========= footer =================*/
+
+.footer {
+    text-align: center;
+    padding: 2.5em 0;
+    font-weight: bold;
+  }
+
+  .footer a {
+    color: #c2775a;
+    text-decoration: none;
+
+  }
+  .footer-link:hover,
+  .social-list_link:hover {
+    opacity: 0.6;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+
+  .social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    padding: 0;
+    font-size: 19px;
+  }
+
+  .social-list_item {
+    margin: 0 .5em;
+  }
+
+  .social-list_link {
+    padding: .5em;
+  }
+
+  /* media query for mobile devices */
+  @media (max-width: 767px) {
+    .custom-shape-divider svg {
+      width: calc(250% + 1.3px);
+      height: 150px;
+    }
+    .header a {
+      font-size: 1rem;
+    }
+    .menu-btn {
+      display: flex;
+    }
+    .menu-items {
+      flex-direction: column;
+      justify-content: space-around;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100vh;
+      transform: translateX(100vw);
+      background-color: #5a4d70;
+      transition: transform 0.3s ease-in-out;
+    }
+    .menu-items.open {
+      transform: translateX(0);
+    }
+    .menu-items li {
+      width: 100vw;
+      height: 100%;
+    }
+    .menu-items li a {
+      color: #ffffff;
+      font-size: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    .menu-items li a:hover {
+      color: #111111;
+    }
+  }
